@@ -41,3 +41,5 @@ next-env.d.ts
 # Local artifacts
 docs/
 temp/
+AGENTS.md
+CLAUDE.md

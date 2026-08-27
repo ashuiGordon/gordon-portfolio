@@ -34,8 +34,8 @@ export function HeroSection() {
             <div className={styles.avatar}>
               <Image
                 className={styles.avatarImage}
-                src={assetPath("/images/gordon-avatar.svg")}
-                alt="Illustrated portrait of Gordon"
+                src={assetPath("/images/gordon-avatar.jpg")}
+                alt="Portrait of Gordon"
                 fill
                 priority
                 sizes="(max-width: 768px) 120px, 180px"
