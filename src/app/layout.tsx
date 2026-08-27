@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
+});
+
+const jetBrainsMonoFull = localFont({
+  src: "./fonts/JetBrainsMono-Regular.woff2",
+  variable: "--font-jetbrains-mono-full",
+  weight: "400",
+  style: "normal",
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -49,7 +59,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jetBrainsMono.variable} h-full`}>
+    <html
+      lang="en"
+      className={`${jetBrainsMono.variable} ${jetBrainsMonoFull.variable} h-full`}
+    >
       <body className="min-h-full">{children}</body>
     </html>
   );

@@ -66,8 +66,8 @@
   max-width: 100%;
   margin: 1em 0;
   color: var(--term-green);
-  font-family: "SFMono-Regular", "SF Mono", Menlo, Monaco, Consolas,
-    "Liberation Mono", monospace;
+  font-family: var(--font-jetbrains-mono-full), "JetBrains Mono",
+    "SFMono-Regular", "SF Mono", Menlo, Monaco, Consolas, monospace;
   font-size: clamp(9px, 1.45vw, 18px);
   font-weight: 400;
   font-variant-ligatures: none;
