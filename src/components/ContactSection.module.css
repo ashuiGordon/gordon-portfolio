@@ -1,0 +1,73 @@
+.section {
+  min-height: auto;
+  padding-block: 32px;
+}
+
+.prompt {
+  gap: 0;
+}
+
+.promptPathLine {
+  display: inline-flex;
+}
+
+.output {
+  margin-bottom: 24px;
+  padding-left: 16px;
+  color: var(--term-green);
+  font-size: 16px;
+  line-height: 28.8px;
+}
+
+.comment {
+  margin: 0 0 16px;
+  color: var(--term-green-dim);
+  font: inherit;
+  font-weight: 400;
+}
+
+.linkRow {
+  display: grid;
+  grid-template-columns: 84px 20px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 8px;
+  padding-block: 4px;
+}
+
+.label {
+  color: var(--term-amber);
+  text-shadow: var(--glow-amber);
+}
+
+.linkRow a {
+  width: fit-content;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.finalPrompt {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 48px;
+  }
+
+  .prompt {
+    flex-direction: column;
+  }
+
+  .output {
+    padding-left: 14px;
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linkRow {
+    grid-template-columns: 70px 16px minmax(0, 1fr);
+    gap: 6px;
+  }
+}

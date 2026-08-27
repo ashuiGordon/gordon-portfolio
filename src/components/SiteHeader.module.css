@@ -1,0 +1,118 @@
+.nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #00aa2a;
+  background: rgb(10 10 10 / 95%);
+  backdrop-filter: blur(10px);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: #00ff41;
+  font-family: var(--font-jetbrains-mono), "Fira Code", "SFMono-Regular",
+    Consolas, monospace;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+  text-decoration: none;
+  text-shadow: var(--glow-green-subtle);
+}
+
+.brandCompact {
+  display: none;
+}
+
+.linkCompactLabel {
+  display: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  position: relative;
+  color: #00aa2a;
+  font-size: 14.4px;
+  line-height: 23.04px;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.link::before {
+  margin-right: 0.3em;
+  content: ">";
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover,
+.link:focus-visible,
+.active {
+  color: #00ff41;
+  text-shadow: var(--glow-green-subtle);
+}
+
+.link:hover::before,
+.link:focus-visible::before,
+.active::before {
+  opacity: 1;
+}
+
+.brand:focus-visible,
+.link:focus-visible {
+  border-radius: 2px;
+  outline: 1px dashed #00ff41;
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .links {
+    gap: 16px;
+  }
+
+  .link::before {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .brandDesktop {
+    display: none;
+  }
+
+  .brandCompact {
+    display: inline;
+  }
+
+  .links {
+    gap: 8px;
+  }
+
+  .link {
+    font-size: 11.5px;
+    line-height: 18.4px;
+  }
+
+  .linkDesktopLabel {
+    display: none;
+  }
+
+  .linkCompactLabel {
+    display: inline;
+  }
+}

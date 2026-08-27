@@ -1,0 +1,36 @@
+.footer {
+  min-height: auto;
+  padding-block: 32px;
+  border-top: 1px solid var(--term-green-dim);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--term-gray);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.inner p {
+  margin: 0;
+}
+
+.inner p:first-child {
+  color: var(--term-green-dim);
+  font-style: italic;
+}
+
+.inner p:last-child {
+  color: var(--term-green);
+}
+
+@media (max-width: 520px) {
+  .inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
