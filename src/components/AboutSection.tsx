@@ -3,12 +3,12 @@ import { profile } from "@/data/portfolio";
 import styles from "./AboutSection.module.css";
 
 const focusAreas = [
-  "Agentic Product Workflows",
-  "Developer Tools & CLI",
-  "Data Analysis & Modeling",
-  "Multi-agent Systems & MCP",
-  "Browser Automation & Retrieval",
-  "Full-stack Prototyping",
+  "Agent Harness & Execution Systems",
+  "Agentic Workflow Productization",
+  "Multi-agent Orchestration & Tool Ecosystems",
+  "Context, State & Tool Integration",
+  "Developer Tools & Open-source Prototyping",
+  "Data & Research Workflows",
 ];
 
 function Prompt({ command, path }: { command: string; path: string }) {
@@ -52,11 +52,14 @@ export function AboutSection() {
               <h2 id="about-heading" className={styles.name}>
                 {profile.name}
               </h2>
-              <p className={styles.role}>{profile.role}</p>
+              <p className={styles.role}>
+                AI Product Manager building agentic products — from workflow
+                design to the harness layer behind reliable execution.
+              </p>
               <div className={styles.comments}>
-                <p>{"// I design agentic workflows from first principles"}</p>
-                <p>{"// I prototype across product, data, and code"}</p>
-                <p>{"// I make ideas inspectable through open source"}</p>
+                <p>{"// I turn fragmented workflows into clear product systems"}</p>
+                <p>{"// I design execution around context, tools, state, and feedback"}</p>
+                <p>{"// I build working prototypes to make product decisions testable"}</p>
               </div>
             </div>
 
@@ -71,11 +74,12 @@ export function AboutSection() {
 
             <Prompt command="cat ./working-style.txt" path="~/about" />
             <div className={`${styles.output} ${styles.indented} ${styles.background}`}>
-              <p>From workflow research to testable, runnable prototypes</p>
-              <p>Product judgment, systems thinking, and hands-on delivery</p>
-              <p>Evidence first, then narrative</p>
+              <p>Start from where real workflows lose context, control, or continuity.</p>
+              <p>Turn execution bottlenecks into explicit product mechanisms and boundaries.</p>
+              <p>Prototype across product, data, and code to expose failure modes and trade-offs.</p>
+              <p>Iterate toward agent systems that are reliable, controllable, and reusable.</p>
               <p className={styles.finalComment}>
-                {"// Curious by default; rigorous when it counts."}
+                {"// Evidence before narrative. Working systems before slides."}
               </p>
             </div>
           </div>

@@ -20,7 +20,7 @@ export const projects: PortfolioProject[] = [
     slug: "openscience",
     title: "OpenScience",
     createdAt: "2026-08-12",
-    status: "private",
+    status: "public",
     language: "Swift + Python",
     stars: 0,
     summary:
@@ -28,9 +28,11 @@ export const projects: PortfolioProject[] = [
     detail:
       "An offline-first research workspace built around traceable evidence, deterministic runs, and portable outputs.",
     tags: ["SwiftUI", "Python", "Local-first", "Research"],
-    image: null,
-    imageAlt: "OpenScience terminal-style project placeholder",
-    links: [],
+    image: "/project-assets/openscience-workbench.png",
+    imageAlt: "OpenScience research conversation workbench interface",
+    links: [
+      { label: "github", href: "https://github.com/ashuiGordon/OpenScience" },
+    ],
   },
   {
     slug: "argo",
