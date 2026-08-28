@@ -104,8 +104,8 @@ export const projects: PortfolioProject[] = [
     detail:
       "A Chinese learning path from classical evaluation and optimization to machine learning and agent-assisted modeling.",
     tags: ["Modeling", "mdBook", "Python", "Machine learning"],
-    image: "/project-assets/mathematical-modeling-guide-social.png",
-    imageAlt: "Mathematical Modeling Guide GitHub preview",
+    image: "/project-assets/mathematical-modeling-guide-demo.gif",
+    imageAlt: "Animated tour of the Mathematical Modeling Guide",
     links: [
       {
         label: "read online",
